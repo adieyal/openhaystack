@@ -47,7 +47,7 @@ jobs:
         with:
           version: "12"
       - name: "Add ESP32 firmware"
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: firmware-esp32
           path: "${{ env.PROJECT_DIR }}/OpenHaystack/HaystackApp/Firmwares/ESP32"
